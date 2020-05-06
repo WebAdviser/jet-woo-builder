@@ -244,7 +244,7 @@ class Jet_Woo_Taxonomy_Tiles extends Jet_Woo_Builder_Base {
 		if ( $thumbnail_id ) {
 			$thumb = wp_get_attachment_url( $thumbnail_id );
 		} else {
-			$thumb = sprintf( 'http://via.placeholder.com/900x600?text=%s', str_replace( ' ', '+', $taxonomy->name ) );
+			$thumb = sprintf( 'https://via.placeholder.com/900x600?text=%s', str_replace( ' ', '+', $taxonomy->name ) );
 		}
 
 		printf( 'style="background-image:url(\'%s\')"', $thumb );
